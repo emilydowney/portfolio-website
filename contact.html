@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		Emily Downey - Portfolio
+	</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+</head>
+
+<body>
+	<header class="page-header">
+		<img class="page-header_item" id="header_logo" src="img/fullname.svg" alt="Emily Downey logo image">
+		<nav class="page-header_item">
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<a role="menuitem" href="index.html" class="navigation-list__item">Home</a>
+				</li>
+				<li role="presentation">
+					<a role="menuitem" href="about.html" class="navigation-list__item">About</a>
+				</li>
+				<li role="presentation">
+					<a role="menuitem" href="work.html" class="navigation-list__item">Work</a>
+				</li>
+				<li role="presentation">
+					<a role="menuitem" href="contact.html" class="navigation-list__item--active">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main_body">
+		<h1>Contact</h1>
+		<p>
+			Emily Downey<br>
+			Kerrville, TX 78028<br>
+			<br>
+			Telephone: <a href="tel:+18303702991">(830)370-2991</a><br>
+			Email: <a href="mailto:emilymdowney@yahoo.com">emilymdowney@yahoo.com</a><br><br>
+		</p>
+		<div class="form"></div>
+			<form action="" method="post">
+				<h2>Contact Me!</h2>
+				<label for="email" class="standard-label">Email*:</label>
+				<input type="email" id="email" name="email" required><br><br>
+
+				<label for="telephone" class="standard-label">Telephone:</label>
+				<input type="tel" id="telephone" name="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>
+
+				<label for="message" class="standard-label">Message*:</label>
+				<textarea maxlength="240" id="message"required></textarea>
+				<h5>* Indicates a required field.</h5>
+				<button type="submit" name="Send message">Submit</button>
+			</form>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		Find me on:<br>
+		<div class="social-media">
+			<a href="https://github.com/emilydowney"><img src="img/github.svg" alt="Github"></a>
+			<img src="img/twitter.svg" alt="Twitter">
+			<img src="img/linkedin.svg" alt="LinkedIn">
+		</div>
+	</footer>
+<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
