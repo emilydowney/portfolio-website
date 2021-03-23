@@ -24,7 +24,7 @@ Lato
  	--primary-color: #0f3057;
  	--secondary-color: #008392;
  	--third_color: #EE6064;
- 	--fourth_color: #e22b35;
+ 	--fourth_color: #df001c;
  	--white: #fff;
  	--font-main: 'Lato', san-serif;
  	--font-secondary: 'Montserrat', san-serif;
@@ -324,7 +324,7 @@ svg.sanantonio {
 }
 
 .grid_item {
-	background-color: lightgray;
+	background-color: #f2f2f2;
 	padding: 20px;
 	width: auto;
 	min-height: auto;
