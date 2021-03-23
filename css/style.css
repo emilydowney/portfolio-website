@@ -12,7 +12,7 @@ Background(white): #ffffff;
 Text Color (Navy): #0f3057;
 Teal: #008392;
 Coral: #EE6064;
-Darker coral: #e22b35;
+Darker coral: #df001c;
 
 Fonts
 
@@ -247,7 +247,6 @@ table {
 
 svg.sanantonio {
 	display: inline;
-	float: left;
 }
 
 @-webkit-keyframes cloud-move {
@@ -367,9 +366,15 @@ form {
 		height: auto;
 		width: 100%;
 	}
-	form input, #message {
+	form input, #message, svg.sanantonio {
 		height: auto;
 		width: 75%;
+	}
+	.profile_portrait {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+
 	}
 }
 
@@ -377,6 +382,15 @@ form {
 	.grid {
 		-ms-grid-columns: 1fr 20px 1fr;
 		grid-template-columns: 1fr 1fr;
+	}
+
+	svg.sanantonio {
+		height: auto;
+		width: 75%;
+	}
+
+	.secondary_button {
+		font-size: 12px;
 	}
 }
 
