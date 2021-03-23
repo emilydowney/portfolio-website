@@ -12,6 +12,7 @@ Background(white): #ffffff;
 Text Color (Navy): #0f3057;
 Teal: #008392;
 Coral: #EE6064;
+Darker coral: #e22b35;
 
 Fonts
 
@@ -23,6 +24,7 @@ Lato
  	--primary-color: #0f3057;
  	--secondary-color: #008392;
  	--third_color: #EE6064;
+ 	--fourth_color: #e22b35;
  	--white: #fff;
  	--font-main: 'Lato', san-serif;
  	--font-secondary: 'Montserrat', san-serif;
@@ -65,12 +67,12 @@ h3 {
 }
 
 a {
-	color: var(--third_color);
+	color: var(--fourth_color);
 	text-decoration: none;
 }
 
 a:visited {
-	color: var(--third_color);
+	color: var(--fourth_color);
 	text-decoration: none;
 }
 
@@ -86,7 +88,7 @@ a:active {
 	border: none;
 	display: inline-block;
 	font-family: inherit;
-	background-color: var(--third_color);
+	background-color: var(--secondary-color);
 	color: white;
 	text-decoration: none;
 	padding: 10px;
@@ -360,6 +362,14 @@ form {
 	#header_logo {
 		height: auto;
 		width: 50%;
+	}
+	form {
+		height: auto;
+		width: 100%;
+	}
+	form input, #message {
+		height: auto;
+		width: 75%;
 	}
 }
 
