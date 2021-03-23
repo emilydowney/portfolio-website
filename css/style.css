@@ -11,8 +11,7 @@ Colors used
 Background(white): #ffffff;
 Text Color (Navy): #0f3057;
 Teal: #008392;
-Purple: #532062;
-Light purple: #A5A1C4;
+Coral: #EE6064;
 
 Fonts
 
@@ -23,7 +22,7 @@ Lato
  :root {
  	--primary-color: #0f3057;
  	--secondary-color: #008392;
- 	--third_color: #F97171;
+ 	--third_color: #EE6064;
  	--white: #fff;
  	--font-main: 'Lato', san-serif;
  	--font-secondary: 'Montserrat', san-serif;
