@@ -110,6 +110,7 @@ a:active {
 .main_body {
 	padding: 40px;
 	text-align: center;
+	margin: 0 50px;
 }
 
 /* ----------- Header content ------------- */
@@ -245,6 +246,14 @@ a:active {
 
 table {
 	display: inline-block;
+}
+
+th {
+	padding: 0 10px;
+}
+
+td {
+	padding: 10px;
 }
 
 svg.sanantonio {
