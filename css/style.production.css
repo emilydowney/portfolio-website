@@ -11,8 +11,8 @@ Colors used
 Background(white): #ffffff;
 Text Color (Navy): #0f3057;
 Teal: #008392;
-Purple: #3C194F;
-Light purple: #A5A1C4;
+Coral: #EE6064;
+Darker coral: #df001c;
 
 Fonts
 
@@ -38,7 +38,7 @@ h1 {
 	font-family: 'Montserrat', san-serif;
 	font-size: 28px;
 	font-weight: 700;
-	color: #008392;
+	color: #EE6064;
 	text-transform: uppercase;
 }
 
@@ -55,12 +55,12 @@ h3 {
 }
 
 a {
-	color: #3C194F;
+	color: #df001c;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #3C194F;
+	color: #df001c;
 	text-decoration: none;
 }
 
@@ -69,7 +69,7 @@ a:hover, a:focus {
 }
 
 a:active {
-	color: #3C194F;
+	color: #EE6064;
 }
 
 .button {
@@ -116,6 +116,7 @@ button:visited {
 .main_body {
 	padding: 40px;
 	text-align: center;
+	margin: 0 50px;
 }
 
 /* ----------- Header content ------------- */
@@ -136,6 +137,10 @@ button:visited {
 	text-transform: uppercase;
 }
 
+.navigation-list__item--active {
+	text-decoration: underline;
+}
+
 .navigation-list__item:visited {
 	color: #fff;
 }
@@ -146,9 +151,9 @@ button:visited {
 	display: flex;
 	padding: 20px;
 	width: 100%;
-	background-color: #3C194F;
+	background-color: #008392;
 	color: #fff;
-	border-bottom: 5px solid #008392;
+	
 }
 
 .page-header_item {
@@ -176,9 +181,11 @@ button:visited {
 
 .profile {
 	max-width: 700px;
+	height: 350px;
 	margin: 0 auto;
 	padding-top: 50px;
 	padding-bottom: 200px;
+	font-size: 20px;
 }
 
 .profile_portrait {
@@ -202,6 +209,17 @@ button:visited {
 	font-weight: 700;
 }
 
+
+.secondary_button {
+	color: #008392;
+	background-color: #fff;
+	border: 2px solid #008392;
+	padding: 15px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', san-serif;
+	font-size: 20px;
+}
+
 /* -------- Footer content --------- */
 
 .page-footer {
@@ -214,13 +232,15 @@ button:visited {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	text-align: center;
-}
-
-.social-media {
+	padding: 20px 0;
 }
 
 .social-media:hover .social-media:focus {
 	cursor: pointer;
+}
+
+.credits {
+	font-size: 11px;
 }
 
 /* -------- About content --------- */
@@ -228,6 +248,18 @@ button:visited {
 
 table {
 	display: inline-block;
+}
+
+th {
+	padding: 0 10px;
+}
+
+td {
+	padding: 10px;
+}
+
+svg.sanantonio {
+	display: inline;
 }
 
 @-webkit-keyframes cloud-move {
@@ -304,7 +336,7 @@ table {
 }
 
 .grid_item {
-	background-color: lightgray;
+	background-color: #f2f2f2;
 	padding: 20px;
 	width: auto;
 	min-height: auto;
@@ -343,12 +375,38 @@ form {
 		height: auto;
 		width: 50%;
 	}
+	form {
+		height: auto;
+		width: 100%;
+	}
+	form input, #message, svg.sanantonio {
+		height: auto;
+		width: 75%;
+	}
+	.profile_portrait {
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.profile {
+		margin-bottom: 170px;
+		text-align: center;
+	}
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
 	.grid {
 		-ms-grid-columns: 1fr 20px 1fr;
 		grid-template-columns: 1fr 1fr;
+	}
+
+	svg.sanantonio {
+		height: auto;
+		width: 75%;
+	}
+
+	.secondary_button {
+		font-size: 14px;
 	}
 }
 

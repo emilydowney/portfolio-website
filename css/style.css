@@ -229,10 +229,6 @@ a:active {
 	padding: 20px 0;
 }
 
-.social-media {
-
-}
-
 .social-media:hover .social-media:focus {
 	cursor: pointer;
 }
