@@ -11,7 +11,7 @@ Colors used
 Background(white): #ffffff;
 Text Color (Navy): #0f3057;
 Teal: #008392;
-Coral: #EE6064;
+Coral: #ee6064;
 Darker coral: #df001c;
 
 Fonts
@@ -252,15 +252,20 @@ table {
 }
 
 th {
-  padding: 0 10px;
+  padding: 20px;
+  color: #fff;
+  background-color: #ee6064;
 }
 
 td {
-  padding: 10px;
+  padding: 15px;
+  background-color: #fad0d1;
 }
 
 svg.sanantonio {
-  display: inline;
+  display: inline-block;
+  height: 260px;
+  width: auto;
 }
 
 @-webkit-keyframes cloud-move {
@@ -374,7 +379,7 @@ form {
 @media all and (max-width: 400px) {
   #header_logo {
     height: auto;
-    width: 50%;
+    width: 100%;
   }
 
   form {
@@ -386,7 +391,7 @@ form {
   #message,
   svg.sanantonio {
     height: auto;
-    width: 75%;
+    width: 90%;
   }
 
   .profile_portrait {
@@ -405,11 +410,6 @@ form {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
-  }
-
-  svg.sanantonio {
-    height: auto;
-    width: 75%;
   }
 
   .secondary_button {
