@@ -367,6 +367,16 @@ form {
   padding: 10px 50px;
 }
 
+.input-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
 #message {
   width: 350px;
   height: 125px;
