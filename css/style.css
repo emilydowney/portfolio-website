@@ -23,7 +23,9 @@ Lato
   --secondary-color: #008392;
   --third_color: #ee6064;
   --fourth_color: #df001c;
+  --poke: #c72638;
   --white: #fff;
+  --black: #000;
   --font-main: 'Lato', san-serif;
   --font-secondary: 'Montserrat', san-serif;
   --weight-main: 400;
@@ -330,8 +332,7 @@ svg.sanantonio {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     margin: 0;
   }
@@ -343,6 +344,10 @@ svg.sanantonio {
   width: auto;
   min-height: auto;
   margin: 0;
+}
+
+.work {
+  max-width: 400px;
 }
 
 /* -------- Contact content -------- */
@@ -365,6 +370,87 @@ form {
 #message {
   width: 350px;
   height: 125px;
+}
+
+/* ------ Pokedex App content ------- */
+@supports (display: grid) {
+  .poke-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    margin: 0;
+    color: var(--black);
+  }
+}
+
+.header-img {
+  max-width: 90%;
+  height: auto;
+}
+
+.poke_header {
+  color: var(--poke);
+}
+
+.poke_header2 {
+  text-align: left;
+}
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.intro {
+  vertical-align: top;
+  top: 0px;
+  width: 33%;
+  display: inline-block;
+}
+
+.tool_list {
+  list-style-position: inside;
+  text-align: left;
+} 
+
+.step_first {
+  text-align: left;
+  margin: 0px;
+  padding: 15px;
+  float: left;
+  height: auto;
+  width: 50%;
+}
+
+figure {
+  margin: 0px;
+  text-align: left;
+  font-size: 14px;
+}
+
+#api {
+  width: 100%;
+}
+
+.conclusion {
+  display: block;
+  text-align: center;
+  width: 40%;
+  float: left;
+}
+
+.conclusion2 {
+  display: block;
+  text-align: left;
+  width: 55%;
+  float: left;
+  margin-right: 5%;
+}
+
+.poke_button {
+  background-color: var(--poke);
+  color: var(--white);
 }
 
 /* -------- Media queries --------- */
@@ -444,5 +530,9 @@ form {
 
   .h1 {
     font-size: 22px;
+  }
+
+  .intro {
+    width: 100%;
   }
 }

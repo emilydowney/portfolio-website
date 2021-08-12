@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Emily Downey - Portfolio
+  </title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="page-header">
+    <img class="page-header_item" id="header_logo" src="img/fullname.svg" alt="Emily Downey logo image">
+    <nav class="page-header_item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a role="menuitem" href="index.html" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" href="about.html" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" href="work.html" class="navigation-list__item--active">Work</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" href="contact.html" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="main_body">
+    <div class="poke-grid">
+      <div class="grid_item">
+        <img class="header-img" src="img/pokedex.jpg">
+      </div>
+      <hr>
+
+      <div class="grid_item">
+        <div class="intro">
+          <h1 class="poke_header">Overview</h1>
+          <p class="content">Pokédex is a JavaScript focused web application, able to load and view data from an
+            external
+            API. Users can search through and click on Pokémon to reveal more information about each one.</p>
+        </div>
+        <div class="intro">
+          <h1 class="poke_header">Purpose</h1>
+          <p class="content">Pokédex is a project built as part of my web development coursework through CareerFoundry.
+            The goal of the project was to build a functioning, JavaScript web app to display in my
+            portfolio. My goal was to feature clean code and design.</p>
+        </div>
+        <div class="intro">
+          <h1 class="poke_header">Tools</h1>
+          <p class="content">
+          <ul class="tool_list">
+            <li>HTML/CSS</li>
+            <li>JavaScript/jQuery</li>
+            <li>Bootstrap</li>
+            <li>ESLint</li>
+            <li>Autoprefixer CSS</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="grid_item">
+        <h1 class="poke_header">The Process</h1>
+        <div class="step_first">
+          <h2 class="poke_header2">Step 1: Using an External API</h2>
+          <p>
+            The earlist stages of this project involved choosing an external API to draw and display data from. The
+            Pokémon API was chosen because it's a public API with extensive documentation. I first retrieved the
+            Pokémon
+            data using the fetch() function before using a forEach loop to display each of the Pokémon names.
+            Asynchronous behavior was implemented for a cleaner app and improved usability. I chose to pull the main
+            details of each Pokémon from the API, feeling the full list of information was beyond the scope of this
+            project.
+          </p>
+          <figure>
+            <img id="api" src="img/pokeapi.png">
+            <figcaption>Figure 1: Screenshot of the Pokémon API located at https://pokeapi.co/</figcaption>
+          </figure>
+        </div>
+
+        <div class="step_first">
+          <h2>Step 2: UI Elements and jQuery</h2>
+          <p>
+            This application implements a UI pattern called a modal to overlay information of each Pokémon upon
+            selection. The coding for this part of the project was challenging for me, but the use of the jQuery library
+            helped
+            streamline and simplify the process. Functions are used to open and close the modal in response to mouse
+            clicks. I also took time in this part of the project to organize my code with spacing and notes to improve
+            the code's readbility. I've learned it's important to implement this step early for easier navigation as the
+            project expands.
+          </p>
+          <figure>
+            <img id="api" src="img/modal.png">
+            <figcaption>Figure 2: Open modal of a single Pokémon</figcaption>
+          </figure>
+        </div>
+
+        <div class="step_first">
+          <h2>Step 3: Bootstrap Implementation</h2>
+          <p>
+            Responsiveness is a vital piece of any web application due to the variety of screen sizes and devices users
+            have access to. The addition of the Bootstrap framework allowed me to create a clean design while easily
+            adapting to window size changes. I used Bootstrap primarily to create the navbar and modals, combining
+            Bootstrap's prebuilt components with my own designs.
+
+          </p>
+        </div>
+
+        <div class="step_first">
+          <h2>Step 4: Final Design and Accessibility</h2>
+          <p>
+            In the late stages of this project, I finalized my design decisions. I chose a color scheme that
+            complimented the Pokémon brand without being overly messy. In addition, I formatted the information modals
+            with left-aligned text and clean, centered titles. I also checked the colors and HTML attributes to insure
+            my app fit with accessibility standards. To finish the project, I used ESLint and W3C Markup to check my
+            code for bugs and errors.
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="grid_item">
+        <h1 class="poke_header">Conclusion</h1>
+        <p>
+          Overall, I am happy with the result of my Pokédex project. I met the assignment goals concerning functionality
+          and user experience. Looking back, I would add a few changes to the project to improve it’s design. I think
+          the app would benefit
+          from more sorting options, such as looking through the Pokémon alphabetically or by type. I would also add
+          some sort of design to the Pokémon types to add some distinction to the text.
+        </p>
+        <p>Thank you for taking the time to view this project. For a live demo of the app or viewing of the code, please
+          use the links below.</p>
+        <a href="https://emilydowney.github.io/js-app/" target="_blank"><button class="poke_button">Demo</button></a>
+        <a href="https://github.com/emilydowney/js-app" target="_blank"><button class="poke_button">GitHub</button></a>
+
+      </div>
+
+      <div class="grid_item">
+
+        <figure class="conclusion">
+          <img height="275px" src="img/pokedexvertical.jpg">
+          <figcaption>Figure 3: App at small screen size</figcaption>
+        </figure>
+        <figure class="conclusion2">
+          <img width="100%" src=" img/poke.gif">
+          <figcaption>Figure 4: Gif displaying a modal opening</figcaption>
+        </figure>
+      </div>
+
+      <br>
+      <a href="https://www.vecteezy.com/free-vector/explosion">Explosion Vectors by Vecteezy</a>
+    </div>
+
+
+  </section>
+  <footer class="page-footer">
+    Find me on:<br>
+    <div class="social-media">
+      <a href="https://github.com/emilydowney" target="_blank"><img src="img/github.svg" alt="Github"></a>
+      <a href="https://codepen.io/emilydowney" target="_blank"><img src="img/codepen.svg" alt="Codepen"></a>
+      <a href="https://linkedin.com/in/emily-m-downey" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+    </div>
+  </footer>
+  <script src="js/work.js"></script>
+</body>
+
+</html>
