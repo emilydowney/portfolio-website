@@ -350,6 +350,26 @@ svg.sanantonio {
   max-width: 400px;
 }
 
+.angular_header {
+  color: #3b477f;
+}
+
+.angular_button {
+  background-color: #3b477f;
+}
+
+.portfolio_header {
+  color: #008392;
+}
+
+.react_header {
+  color: #1187A3;
+}
+
+.react_button {
+  background-color: #6aba76;
+}
+
 /* -------- Contact content -------- */
 
 label {
