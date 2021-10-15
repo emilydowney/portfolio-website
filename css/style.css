@@ -241,20 +241,42 @@ button:visited {
 }
 
 /* -------- About content --------- */
-
-table {
-  display: inline-block;
+.info {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 900px;
 }
 
-th {
-  padding: 20px;
-  color: #fff;
-  background-color: var(--third_color);
+.profile_img {
+  height: 400px;
+  width: auto;
+  margin-right: 10px;
 }
 
-td {
-  padding: 15px;
-  background-color: #fad0d1;
+.aboutme {
+  max-width: 500px;
+  margin-top: 0;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.info_desc {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: var(--white);
+  width: 100px;
+  margin: 10px;
 }
 
 svg.sanantonio {
@@ -518,6 +540,16 @@ figure {
   .h1 {
     font-size: 22px;
   }
+
+  .info {
+    display: inline-block;
+  }
+
+  .profile_img {
+    height: 200px;
+    width: auto;
+    display: inline-block;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -554,5 +586,15 @@ figure {
 
   .intro {
     width: 100%;
+  }
+
+  .info {
+    display: inline-block;
+  }
+
+  .profile_img {
+    height: 200px;
+    width: auto;
+    display: inline-block;
   }
 }
