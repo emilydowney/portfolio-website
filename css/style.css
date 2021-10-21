@@ -266,6 +266,10 @@ button:visited {
   margin: 0 auto;
 }
 
+.skills_header {
+  margin-top: 60px;
+}
+
 .skill_flex {
   display: flex;
   align-items: center;
